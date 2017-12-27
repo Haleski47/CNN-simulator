@@ -1,0 +1,9 @@
+Clock period = 6.2ns
+Number of cycle to perform the operation = 1517 cycles
+Execution time = 1517 * 6.2 = 9405.4ns
+Area obtained = 9313.192030 (um2)
+Performance parameter = area * number of cycles * clock period
+                                      = 9313.192030*1517*6.2
+                                      = 87594296.318962 ns*um2
+
+

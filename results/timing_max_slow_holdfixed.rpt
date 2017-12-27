@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MyDesign
+Version: K-2015.06-SP1
+Date   : Sun Nov 12 16:07:40 2017
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: FILTER1_Q2/clk_r_REG862_S7
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FILTER1_Q2/clk_r_REG639_S4
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FILTER1_Q2/clk_r_REG862_S7/CK (SDFF_X2)                 0.00       0.00 r
+  FILTER1_Q2/clk_r_REG862_S7/Q (SDFF_X2)                  0.46       0.46 r
+  FILTER1_Q2/U78/ZN (AND2_X4)                             0.33       0.79 r
+  FILTER1_Q2/U1/A[5] (mac_3_DW02_mult_3_stage_1)          0.00       0.79 r
+  FILTER1_Q2/U1/mult_97/a[5] (mac_3_DW_mult_tc_1)         0.00       0.79 r
+  FILTER1_Q2/U1/mult_97/U566/ZN (INV_X8)                  0.09       0.88 f
+  FILTER1_Q2/U1/mult_97/U743/ZN (XNOR2_X2)                0.31       1.19 f
+  FILTER1_Q2/U1/mult_97/U1204/ZN (INV_X4)                 0.24       1.42 r
+  FILTER1_Q2/U1/mult_97/U1202/ZN (NAND3_X4)               0.18       1.60 f
+  FILTER1_Q2/U1/mult_97/U720/ZN (OAI22_X2)                0.40       2.00 r
+  FILTER1_Q2/U1/mult_97/U175/S (HA_X1)                    0.64       2.64 r
+  FILTER1_Q2/U1/mult_97/U974/ZN (XNOR2_X2)                0.38       3.03 r
+  FILTER1_Q2/U1/mult_97/U172/S (FA_X1)                    0.77       3.79 f
+  FILTER1_Q2/U1/mult_97/U1050/ZN (XNOR2_X2)               0.30       4.09 f
+  FILTER1_Q2/U1/mult_97/U1241/ZN (XNOR2_X2)               0.26       4.35 f
+  FILTER1_Q2/U1/mult_97/product[9] (mac_3_DW_mult_tc_1)
+                                                          0.00       4.35 f
+  FILTER1_Q2/U1/PRODUCT[9] (mac_3_DW02_mult_3_stage_1)
+                                                          0.00       4.35 f
+  FILTER1_Q2/add_48/B[9] (mac_3_DW01_add_2)               0.00       4.35 f
+  FILTER1_Q2/add_48/U207/ZN (NAND2_X1)                    0.17       4.52 r
+  FILTER1_Q2/add_48/U164/ZN (INV_X1)                      0.09       4.61 f
+  FILTER1_Q2/add_48/U238/ZN (AOI21_X4)                    0.32       4.93 r
+  FILTER1_Q2/add_48/U235/ZN (OAI21_X4)                    0.11       5.04 f
+  FILTER1_Q2/add_48/U170/ZN (NAND2_X2)                    0.11       5.15 r
+  FILTER1_Q2/add_48/U167/ZN (NAND2_X2)                    0.07       5.22 f
+  FILTER1_Q2/add_48/U154/ZN (NAND2_X2)                    0.11       5.33 r
+  FILTER1_Q2/add_48/U245/ZN (NAND2_X4)                    0.07       5.40 f
+  FILTER1_Q2/add_48/U160/ZN (AOI21_X4)                    0.16       5.56 r
+  FILTER1_Q2/add_48/U156/ZN (XNOR2_X2)                    0.31       5.87 r
+  FILTER1_Q2/add_48/SUM[14] (mac_3_DW01_add_2)            0.00       5.87 r
+  FILTER1_Q2/clk_r_REG639_S4/D (DFFR_X2)                  0.00       5.87 r
+  data arrival time                                                  5.87
+
+  clock clk (rise edge)                                   6.20       6.20
+  clock network delay (ideal)                             0.00       6.20
+  clock uncertainty                                      -0.05       6.15
+  FILTER1_Q2/clk_r_REG639_S4/CK (DFFR_X2)                 0.00       6.15 r
+  library setup time                                     -0.28       5.87
+  data required time                                                 5.87
+  --------------------------------------------------------------------------
+  data required time                                                 5.87
+  data arrival time                                                 -5.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
